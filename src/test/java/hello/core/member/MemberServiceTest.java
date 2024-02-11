@@ -1,6 +1,7 @@
 package hello.core.member;
 
-import org.junit.jupiter.api.Assertions;
+
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class MemberServiceTest {
@@ -17,7 +18,7 @@ public class MemberServiceTest {
 
         //then
 
-        Assertion.assertThat(member)
+        Assertions.assertThat(member).isEqualTo(findMember);
 
     }
 
