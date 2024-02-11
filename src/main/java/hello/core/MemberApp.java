@@ -9,7 +9,9 @@ public class MemberApp {
     //test용
 //    psvm치고 enter치면 자동으로 나옴
     public static void main(String[] args) {
-        MemberService memberService = new MemberServiceImpl();
+
+        AppConfig appConfig = new AppConfig();
+        MemberService memberService = appConfig.memberService();
 
         Member member = new Member(1L, "memberA", Grade.VIP);
         //회원가입
