@@ -8,8 +8,9 @@ import org.junit.jupiter.api.Test;
 
 
 import static org.assertj.core.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.*;
 
+//제어의 역전 = 프레임 워크가 대신 호출해 준다
+//제어권이 뒤바뀐다.
 class RateDiscountePolicyTest {
     RateDiscountePolicy discountePolicy = new RateDiscountePolicy();
 
